@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourism and travel Management</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<a href="{%url 'register' %}" >Sign-up</a>&nbsp &nbsp &nbsp
+<a href="{%url 'login' %}" >LOGIN</a>&nbsp &nbsp &nbsp
+<a href="{%url 'AboutUs' %}">AboutUs</a>&nbsp &nbsp &nbsp
+<a href="{%url 'contact' %}">CONTACT US</a>&nbsp &nbsp &nbsp
+<a href="{%url '' %}">Home</a>&nbsp &nbsp &nbsp
+<a href="{%url 'viewplaces' %}">View Packages</a>
+{% block 'b1'%}
+<h1 align="center">Welcome to travel Tourism </h1>
+<div>
+    {% for i in messages%}
+    <h4 align="center"><font color="red">{{i}}</font></h4>
+    {% endfor %}
+</div>
+<!--<h3 align="center"><font color="black">PAINTINGS</font></h3>-->
+<!--<img src="https://3.bp.blogspot.com/-Zt-yWnApZ5A/TlMGfh-tykI/AAAAAAAAAoE/53d5KEbBSLU/s1600/Painting-Of-Colorful-Trees-.jpg" width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<img src="https://th.bing.com/th/id/R.9778172bb60f9c5774b40b0fde77df4d?rik=Swg5PAE8YDYaNw&riu=http%3a%2f%2fwww.cartoondistrict.com%2fwp-content%2fuploads%2f2017%2f07%2fSimple-Acrylic-Canvas-Painting-Ideas-for-Beginners10.jpg&ehk=qbeXgoGWl9wjSDC4WEbyiksokOLKUGES880QXhbWFB4%3d&risl=&pid=ImgRaw&r=0"width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<img src="https://i.pinimg.com/originals/45/2a/c9/452ac9e3ed24aa1620ab4e087fb5c71a.jpg"width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<img src="https://th.bing.com/th/id/OIP.ILC29XZ8tz8PjauCAL5BKwHaJR?w=719&h=900&rs=1&pid=ImgDetMain" width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<h3 align="center"><font color="black"> PENCIL SKETCHES</font></h3>-->
+<!--<img src="https://th.bing.com/th/id/R.61217f20dc53e99a9fb18be32c264d23?rik=c4Dq4lVcYMqAUQ&riu=http%3a%2f%2fimg.izismile.com%2fimg%2fimg3%2f20100121%2fpencil_drawings_02.jpg&ehk=npxe4yiafEkIScxKuKwojM4%2bLYS5YOnv6gI0iNEQenU%3d&risl=&pid=ImgRaw&r=0"width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<img src="https://th.bing.com/th/id/R.3b4f5054c09e251f43834781bccb879b?rik=TkYt2V7OHHy5hQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f_De3HUQ-A6EA%2fTTcDBvWeY2I%2fAAAAAAAAArQ%2fPzOtP_yTkew%2fs1600%2fpencil%2bdrawings%2beyes%2bimg.jpg%2b%2525285%252529.jpg&ehk=sDCSeK%2fzGwxGsZsFTl8%2flbVUm9sSMIRj1HLb0CNzVrk%3d&risl=&pid=ImgRaw&r=0"width="300" height="300">&nbsp &nbsp &nbsp-->
+<!--<h3 align="center"><font color="black"> MANDAL ART</font></h3>-->
+<!--<img src="https://i.pinimg.com/originals/aa/e4/5f/aae45f51b215109c5716b7129f5cdeef.jpg"width="300"height="300">-->
+<!--<h3 align="center"><font color="black"> DOODLING</font></h3>-->
+<!--<img src="https://i.pinimg.com/originals/2f/89/35/2f8935253645f9e51ac61e87262b9107.jpg"width="300"height="300">-->
+{% endblock %}
+</body>
+</html>

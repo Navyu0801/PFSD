@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h1 align="center"><font color="black">Login Failed</font></h1>
+<div>
+    {% for i in messages%}
+    <h4 align="center"><font color="red">{{i}}</font></h4>
+    {% endfor %}
+</div>
+{% endblock %}
